@@ -4,11 +4,13 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>SmartInfrastructure.SkyApm.Diagnostics.AspNetCore</RootNamespace>
     <AssemblyVersion>0.0.3.0</AssemblyVersion>
-    <FileVersion>1.0.3.0</FileVersion>
+    <FileVersion>0.0.3.0</FileVersion>
     <Version>0.0.3</Version>
     <Authors>wuhan</Authors>
     <Company>he nan you tai du</Company>
     <Description />
+    <PackageIconUrl>https://avatars3.githubusercontent.com/u/6104062?s=460&amp;u=656c4a520eb711d9f73ee148a817b4e622545185&amp;v=4</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/wuhanhan/SmartInfrastructure/tree/master/src/SkyAPM/SmartInfrastructure.SkyApm.Diagnostics.AspNetCore</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>

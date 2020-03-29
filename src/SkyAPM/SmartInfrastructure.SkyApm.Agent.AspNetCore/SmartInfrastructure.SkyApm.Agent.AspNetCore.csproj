@@ -5,7 +5,19 @@
     <Version>0.0.3.1</Version>
     <Description>SkyApm NetCore Agent Hosting扩展，可自定义按需添加追踪模块（如 http,grpc,cap等等）</Description>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>wuhan</Authors>
+    <Company>he nan you tai du</Company>
+    <PackageProjectUrl>https://github.com/wuhanhan/SmartInfrastructure/tree/master/src/SkyAPM/SmartInfrastructure.SkyApm.Agent.AspNetCore</PackageProjectUrl>
+    <PackageIconUrl>https://avatars3.githubusercontent.com/u/6104062?s=460&amp;u=656c4a520eb711d9f73ee148a817b4e622545185&amp;v=4</PackageIconUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="README.md" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.2.0" />

@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.03</Version>
+    <Authors>wuhan</Authors>
+    <Company>he nan you tai du</Company>
+    <Description>SkyApm Grpc追踪扩展</Description>
+    <PackageProjectUrl>https://github.com/wuhanhan/SmartInfrastructure/tree/master/src/SkyAPM/SmartInfrastructure.SkyApm.Diagnostics.Grpc</PackageProjectUrl>
+    <PackageIconUrl>https://avatars3.githubusercontent.com/u/6104062?s=460&amp;u=656c4a520eb711d9f73ee148a817b4e622545185&amp;v=4</PackageIconUrl>
   </PropertyGroup>
 
   <ItemGroup>
