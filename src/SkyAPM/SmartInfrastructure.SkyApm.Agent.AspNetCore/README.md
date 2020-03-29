@@ -96,7 +96,6 @@ dotnet add package SkyAPM.Diagnostics.HttpClient
 ```
 
 ```
-
  services.AddSkyApmCore((option) =>
             {
     option.ServiceName = "CodingTools";
@@ -111,7 +110,6 @@ dotnet add package SkyAPM.Diagnostics.HttpClient
 
 ```
 
-```
 对EF方式下mysql追踪
 
 ```
@@ -119,7 +117,6 @@ dotnet add package SkyAPM.Diagnostics.EntityFrameworkCore.Pomelo.MySql
 ```
 
 ```
-
  services.AddSkyApmCore((option) =>
             {
     option.ServiceName = "CodingTools";
