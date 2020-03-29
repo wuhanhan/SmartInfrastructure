@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SkyAPM", "SkyAPM", "{D38B79EA-1361-4C67-8F61-6BE47A28B876}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartInfrastructure.SkyApm.Agent.AspNetCore", "src\SkyAPM\SmartInfrastructure.SkyApm.Agent.AspNetCore\SmartInfrastructure.SkyApm.Agent.AspNetCore.csproj", "{5CC0A9B9-53E7-42A5-9F03-6F4D059F34D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{F324D645-A36A-4F3E-B0A0-5A29A1AE38FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{DD6FF4EE-EE3C-4718-B059-7A4644015A26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SkyApm", "SkyApm", "{D5227064-F81E-4D2D-8CDA-78DFFCEEAB8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyApm.Tests", "tests\SkyApm\SkyApm.Tests\SkyApm.Tests.csproj", "{148F0475-359F-47FF-8FDE-FBD28C36EE82}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartInfrastructure.UnitTest", "tests\SmartInfrastructure.UnitTest\SmartInfrastructure.UnitTest.csproj", "{FD458444-2FA5-442E-A9DA-B1FADD79B867}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diagnostics", "Diagnostics", "{06CA438E-D2A6-45C0-A34E-DE0B148A4334}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartInfrastructure.SkyApm.Diagnostics.AspNetCore", "src\SkyAPM\SmartInfrastructure.SkyApm.Diagnostics.AspNetCore\SmartInfrastructure.SkyApm.Diagnostics.AspNetCore.csproj", "{A103616B-3E6F-426C-8301-83529893736C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartInfrastructure.SkyApm.Diagnostics.Grpc", "src\SkyAPM\SmartInfrastructure.SkyApm.Diagnostics.Grpc\SmartInfrastructure.SkyApm.Diagnostics.Grpc.csproj", "{626151BD-F320-46DA-9B61-D4D98183AC61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartInfrastructure.SkyApm.Diagnostics.Grpc.Client", "src\SkyAPM\SmartInfrastructure.SkyApm.Diagnostics.Grpc.Client\SmartInfrastructure.SkyApm.Diagnostics.Grpc.Client.csproj", "{6BFD0DCF-7137-4A53-BCDC-577C7A73C3C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CC0A9B9-53E7-42A5-9F03-6F4D059F34D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CC0A9B9-53E7-42A5-9F03-6F4D059F34D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CC0A9B9-53E7-42A5-9F03-6F4D059F34D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CC0A9B9-53E7-42A5-9F03-6F4D059F34D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{148F0475-359F-47FF-8FDE-FBD28C36EE82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{148F0475-359F-47FF-8FDE-FBD28C36EE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{148F0475-359F-47FF-8FDE-FBD28C36EE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{148F0475-359F-47FF-8FDE-FBD28C36EE82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD458444-2FA5-442E-A9DA-B1FADD79B867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD458444-2FA5-442E-A9DA-B1FADD79B867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD458444-2FA5-442E-A9DA-B1FADD79B867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD458444-2FA5-442E-A9DA-B1FADD79B867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A103616B-3E6F-426C-8301-83529893736C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A103616B-3E6F-426C-8301-83529893736C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A103616B-3E6F-426C-8301-83529893736C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A103616B-3E6F-426C-8301-83529893736C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{626151BD-F320-46DA-9B61-D4D98183AC61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{626151BD-F320-46DA-9B61-D4D98183AC61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{626151BD-F320-46DA-9B61-D4D98183AC61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{626151BD-F320-46DA-9B61-D4D98183AC61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BFD0DCF-7137-4A53-BCDC-577C7A73C3C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BFD0DCF-7137-4A53-BCDC-577C7A73C3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BFD0DCF-7137-4A53-BCDC-577C7A73C3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BFD0DCF-7137-4A53-BCDC-577C7A73C3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D38B79EA-1361-4C67-8F61-6BE47A28B876} = {F324D645-A36A-4F3E-B0A0-5A29A1AE38FD}
+		{5CC0A9B9-53E7-42A5-9F03-6F4D059F34D3} = {D38B79EA-1361-4C67-8F61-6BE47A28B876}
+		{D5227064-F81E-4D2D-8CDA-78DFFCEEAB8C} = {DD6FF4EE-EE3C-4718-B059-7A4644015A26}
+		{148F0475-359F-47FF-8FDE-FBD28C36EE82} = {D5227064-F81E-4D2D-8CDA-78DFFCEEAB8C}
+		{FD458444-2FA5-442E-A9DA-B1FADD79B867} = {DD6FF4EE-EE3C-4718-B059-7A4644015A26}
+		{06CA438E-D2A6-45C0-A34E-DE0B148A4334} = {D38B79EA-1361-4C67-8F61-6BE47A28B876}
+		{A103616B-3E6F-426C-8301-83529893736C} = {06CA438E-D2A6-45C0-A34E-DE0B148A4334}
+		{626151BD-F320-46DA-9B61-D4D98183AC61} = {06CA438E-D2A6-45C0-A34E-DE0B148A4334}
+		{6BFD0DCF-7137-4A53-BCDC-577C7A73C3C4} = {06CA438E-D2A6-45C0-A34E-DE0B148A4334}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {22F4C08D-3EC4-4A18-9DEB-326DE9C2C5F5}
+	EndGlobalSection
+EndGlobal
