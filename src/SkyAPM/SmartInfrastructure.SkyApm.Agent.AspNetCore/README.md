@@ -24,7 +24,7 @@ The core features are following.
 					
 | Package Name |  NuGet | MyGet | Downloads 
 |--------------|  ------- |  ------- |  ---- 
-| SmartInfrastructure.SkyApm.Agent.AspNetCore | [![nuget] (https://img.shields.io/nuget/v/SmartInfrastructure.SkyApm.Agent.AspNetCore.svg?style=flat-square)](https://www.nuget.org/packages/SmartInfrastructure.SkyApm.Agent.AspNetCore) |  | [![stats](https://img.shields.io/nuget/dt/SmartInfrastructure.SkyApm.Agent.AspNetCore.svg?style=flat-square)](https://www.nuget.org/stats/packages/SmartInfrastructure.SkyApm.Agent.AspNetCore?groupby=Version)
+| SmartInfrastructure.SkyApm.Agent.AspNetCore | [![nuget](https://img.shields.io/nuget/v/SmartInfrastructure.SkyApm.Agent.AspNetCore.svg?style=flat-square)](https://www.nuget.org/packages/SmartInfrastructure.SkyApm.Agent.AspNetCore) |  | [![stats](https://img.shields.io/nuget/dt/SmartInfrastructure.SkyApm.Agent.AspNetCore.svg?style=flat-square)](https://www.nuget.org/stats/packages/SmartInfrastructure.SkyApm.Agent.AspNetCore?groupby=Version)
 
 # Getting Started
 
@@ -86,6 +86,51 @@ dotnet add package SkyAPM.Diagnostics.CAP
         }
     };
 }).AddCap();
+
+
+```
+对Http请求追踪
+
+```
+dotnet add package SkyAPM.Diagnostics.HttpClient
+```
+
+```
+
+ services.AddSkyApmCore((option) =>
+            {
+    option.ServiceName = "CodingTools";
+    option.Transport = new SkyApmTransportOption()
+    {
+        gRPC = new SkyApmGrpcOption()
+        {
+            Servers = "192.168.1.240:11800"
+        }
+    };
+}).AddCap().AddHttpClient();
+
+```
+
+```
+对EF方式下mysql追踪
+
+```
+dotnet add package SkyAPM.Diagnostics.EntityFrameworkCore.Pomelo.MySql
+```
+
+```
+
+ services.AddSkyApmCore((option) =>
+            {
+    option.ServiceName = "CodingTools";
+    option.Transport = new SkyApmTransportOption()
+    {
+        gRPC = new SkyApmGrpcOption()
+        {
+            Servers = "192.168.1.240:11800"
+        }
+    };
+}).AddCap().AddHttpClient().AddEntityFrameworkCore(c => c.AddPomeloMysql());
 
 ```
 
