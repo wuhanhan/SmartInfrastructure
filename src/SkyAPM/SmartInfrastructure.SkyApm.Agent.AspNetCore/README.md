@@ -96,3 +96,7 @@ dotnet add package SkyAPM.Diagnostics.CAP
 官方提供的追踪是代码无侵入型的，即按照官方的方式配置，在项目启动时自动注入服务，很便利。但便利的同时带来一些问题，比如 系统提供的全家桶模式中没有添加对Cap的追踪，无法按需加载需要追踪的模块。这个包是在官方提供的sdk的基础上进行扩展，拓展了官方sdk无法按需加载的问题。
 
 AddSkyApmCore（） 方法返回 SkyApmExtensions ，通过链式.AddCap().AddHttpClient().AddEntityFrameworkCore(c => c.AddPomeloMysql())  方式按需加载需要追踪模块
+
+- 什么情况下使用这个包？
+
+如果您需要自定义追踪模块或者需要对Cap的追踪，可以使用。如果想使用全家桶无侵入模式，可直接添加 SkyApm.Agent.AspNetCore 官方包即可
